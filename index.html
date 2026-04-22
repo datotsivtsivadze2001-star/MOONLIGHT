@@ -3,42 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOONLIGHT - საქორწილო მოსაწვევი</title>
+    <title>Wedding Invitation | MOONLIGHT</title>
     <style>
-        body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; text-align: center; color: #333; margin: 0; padding: 0; }
-        header { background-color: #2c3e50; color: white; padding: 60px 20px; }
-        .content { padding: 40px; background: white; max-width: 600px; margin: -50px auto 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
-        p { font-size: 1.2em; line-height: 1.6; }
-        .details { margin: 30px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 20px 0; }
-        .btn { background-color: #d4af37; color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: 0.3s; }
-        .btn:hover { background-color: #b8962d; }
-        footer { margin-top: 50px; font-size: 0.9em; color: #777; padding-bottom: 30px; }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Times New Roman', serif;
+            /* ფონზე დავაყენოთ ლამაზი საქორწილო სურათი */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .glass-container {
+            background: rgba(255, 255, 255, 0.1); /* შუშის ეფექტი */
+            backdrop-filter: blur(15px); /* დაბურვა */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 50px 30px;
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+
+        .divider {
+            width: 50px;
+            height: 2px;
+            background: #d4af37;
+            margin: 20px auto;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            letter-spacing: 1px;
+        }
+
+        .date-box {
+            font-size: 1.5em;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 15px 0;
+            margin: 25px 0;
+            font-weight: bold;
+        }
+
+        .location {
+            color: #d4af37;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .rsvp-btn {
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 12px 40px;
+            text-decoration: none;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.4s;
+            display: inline-block;
+        }
+
+        .rsvp-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.7em;
+            opacity: 0.6;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>MOONLIGHT EVENTS</h1>
-    <p>მოხარულები ვართ გიხილოთ ჩვენს დღესასწაულზე</p>
-</header>
-
-<div class="content">
-    <h2>გიწვევთ ქორწილში!</h2>
-    <p>ძვირფასო სტუმრებო, ჩვენთვის დიდი პატივია თქვენი მოწვევა ჩვენი სიყვარულის დღესასწაულზე.</p>
-    
-    <div class="details">
-        <p>📅 <strong>თარიღი:</strong> 22 აგვისტო, 2026</p>
-        <p>📍 <strong>ლოკაცია:</strong> თბილისი, მზის სასახლე</p>
-        <p>⏰ <strong>დრო:</strong> 19:00 საათი</p>
+    <div class="glass-container">
+        <p>MOONLIGHT EVENTS PRESENTS</p>
+        <h1>SAVE THE DATE</h1>
+        <div class="divider"></div>
+        
+        <p>JOIN US TO CELEBRATE THE WEDDING OF</p>
+        <h2 style="font-size: 2.2em; margin: 10px 0;">David & Nia</h2>
+        
+        <div class="date-box">
+            AUGUST | 22 | 2026
+        </div>
+        
+        <p class="location">Mtatsminda Panorama, Tbilisi</p>
+        
+        <a href="#" class="rsvp-btn">Confirm Attendance</a>
+        
+        <footer>
+            DESIGNED BY MOONLIGHT MANAGEMENT
+        </footer>
     </div>
-
-    <a href="#" class="btn">დაადასტურე დასწრება (RSVP)</a>
-</div>
-
-<footer>
-    &copy; 2026 MOONLIGHT - Created by Datotsivtsivadze
-</footer>
 
 </body>
 </html>
